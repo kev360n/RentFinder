@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RentFinder.com</title>
+    <link rel="stylesheet" type="text/css" href="search.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Back to Top Button -->
+    <button onclick="topFunction()" id="backToTopBtn" title="Go to top">Top</button>
+    <div class="background-wrapper"></div>
+    <!-- whats up and Side menu icon -->
+    <a href="https://wa.me/+254745561837" target="_blank" class="whatsapp-icon">
+        <i class="fab fa-whatsapp"></i> 
+    </a>
+    <span class="menu-icon" onclick="openNav()">&#9776;</span>
+    <!-- Side menu -->
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="login.html">Login</a>
+      <a href="login.html">Landlord/Agent Login</a>
+      <a href="aboutus.html">About Us</a>
+      <a href="Hire.html">Hire professional</a>
+      <a href="https://wa.me/+254745561837" target="_blank" class="whatsapp-link">
+        <i class="fab fa-whatsapp"></i> contuct us
+     </a>
+    </div>
+
+    <!-- Main content of the website -->
+    <h1>RentFinder</h1>
+    <div class="box">
+        <i class="fa fa-search" aria-hidden="true"></i>
+        <input type="text" name="" placeholder="Search...">
+        <i class="fa-solid fa-arrow-down-a-z dropdown-icon" aria-hidden="true"></i>
+
+        <!-- Dropdown menu -->
+        <div class="dropdown-content">
+            <div class="container">
+                <h2>RentalFinder</h2>
+                <div class="glass search-box">
+                    <form action="#" method="GET">
+                        <label for="rooms">Number of Rooms:</label>
+                        <select id="rooms" name="rooms">
+                            <option value="1">1 Bedroom</option>
+                            <option value="2">2 Bedroom</option>
+                            <option value="3">3 Bedroom</option>
+                        </select>
+       
+                        <label for="price">Price Range (KES):</label>
+                        <select id="price" name="price">
+                            <option value="5000-10000">5,000 - 10,000</option>
+                            <option value="10000-15000">10,000 - 15,000</option>
+                            <option value="15000-20000">15,000 - 20,000</option>
+                        </select>
+       
+                        <label for="street">Street:</label>
+                        <select id="street" name="street">
+                            <option value="1">Street 1</option>
+                            <option value="2">Street 2</option>
+                            <option value="3">Street 3</option>
+                            <option value="4">Street 4</option>
+                            <option value="5">Street 5</option>
+                            <option value="6">Street 6</option>
+                            <option value="7">Street 7</option>
+                            <option value="8">Street 8</option>
+                            <option value="9">Street 9</option>
+                            <option value="10">Street 10</option>
+                        </select>
+       
+                        <button type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <h2> Available houses</h3>
+    <!-- cards -->
+        <div class="container">
+            <div class="card" onclick="location.href='cards.html';">
+                <img id="card-image" src="" alt="House Image">
+                <div class="info">
+                    <h3>Single Room To Let Kasarani</h3>
+                    <p>Singles</p>
+                    <p><strong>Ksh 4,500</strong></p>
+                    <p><i class="location">Kasarani, Nairobi</i></p>
+                </div>
+            </div>
+            <div class="card" onclick="location.href='#';">
+                <img src="house2.jpg" alt="House Image">
+                <div class="info">
+                    <h3>2 Bedrooms To Let Thogoto</h3>
+                    <p>Two-bedrooms</p>
+                    <p><strong>Ksh 20,000</strong></p>
+                    <p><i class="location">Thogoto, Kiambu</i></p>
+                </div>
+            </div>
+            <div class="card" onclick="location.href='#';">
+                <img src="house3.jpg" alt="House Image">
+                <div class="info">
+                    <h3>3 Bedroom Master Ensuite</h3>
+                    <p>Three-bedrooms</p>
+                    <p><strong>Ksh 27,000</strong></p>
+                    <p><i class="location">Kenyatta Road Estate, Thika</i></p>
+                </div>
+            </div>
+            <div class="card" onclick="location.href='#';">
+                <img src="house4.jpg" alt="House Image">
+                <div class="info">
+                    <h3>Nelly Oasis</h3>
+                    <p>Two-bedrooms</p>
+                    <p><strong>Ksh 15,000</strong></p>
+                    <p><i class="location">Ruiru, Nairobi</i></p>
+                </div>
+            </div>
+            <div class="card" onclick="location.href='cards.html';">
+                <img id="card-image" src="" alt="House Image">
+                <div class="info">
+                    <h3>Single Room To Let Kasarani</h3>
+                    <p>Singles</p>
+                    <p><strong>Ksh 4,500</strong></p>
+                    <p><i class="location">Kasarani, Nairobi</i></p>
+                </div>
+            </div>
+            <div class="card" onclick="location.href='#';">
+                <img src="house1.jpg" alt="House Image">
+                <div class="info">
+                    <h3>Single Room To Let Kasarani</h3>
+                    <p>Singles</p>
+                    <p><strong>Ksh 4,500</strong></p>
+                    <p><i class="location">Kasarani, Nairobi</i></p>
+                </div>
+            </div>
+            <div class="card" onclick="location.href='#';">
+                <img src="house1.jpg" alt="House Image">
+                <div class="info">
+                    <h3>Single Room To Let Kasarani</h3>
+                    <p>Singles</p>
+                    <p><strong>Ksh 4,500</strong></p>
+                    <p><i class="location">Kasarani, Nairobi</i></p>
+                </div>
+            </div>
+            <div class="card" onclick="location.href='#';">
+                <img src="house1.jpg" alt="House Image">
+                <div class="info">
+                    <h3>Single Room To Let Kasarani</h3>
+                    <p>Singles</p>
+                    <p><strong>Ksh 4,500</strong></p>
+                    <p><i class="location">Kasarani, Nairobi</i></p>
+                </div>
+            </div>
+            <div class="card" onclick="location.href='#';">
+                <img src="house1.jpg" alt="House Image">
+                <div class="info">
+                    <h3>Single Room To Let Kasarani</h3>
+                    <p>Singles</p>
+                    <p><strong>Ksh 4,500</strong></p>
+                    <p><i class="location">Kasarani, Nairobi</i></p>
+                </div>
+            </div>
+            <div class="card" onclick="location.href='#';">
+                <img src="house2.jpg" alt="House Image">
+                <div class="info">
+                    <h3>2 Bedrooms To Let Thogoto</h3>
+                    <p>Two-bedrooms</p>
+                    <p><strong>Ksh 20,000</strong></p>
+                    <p><i class="location">Thogoto, Kiambu</i></p>
+                </div>
+            </div>
+            <div class="card" onclick="location.href='#';">
+                <img src="house3.jpg" alt="House Image">
+                <div class="info">
+                    <h3>3 Bedroom Master Ensuite</h3>
+                    <p>Three-bedrooms</p>
+                    <p><strong>Ksh 27,000</strong></p>
+                    <p><i class="location">Kenyatta Road Estate, Thika</i></p>
+                </div>
+            </div>
+            <div class="card" onclick="location.href='#';">
+                <img src="house4.jpg" alt="House Image">
+                <div class="info">
+                    <h3>Nelly Oasis</h3>
+                    <p>Two-bedrooms</p>
+                    <p><strong>Ksh 15,000</strong></p>
+                    <p><i class="location">Ruiru, Nairobi</i></p>
+                </div>
+            </div>
+            <div class="card" onclick="location.href='#';">
+                <img src="house1.jpg" alt="House Image">
+                <div class="info">
+                    <h3>Single Room To Let Kasarani</h3>
+                    <p>Singles</p>
+                    <p><strong>Ksh 4,500</strong></p>
+                    <p><i class="location">Kasarani, Nairobi</i></p>
+                </div>
+            </div>
+            <div class="card" onclick="location.href='#';">
+                <img src="house2.jpg" alt="House Image">
+                <div class="info">
+                    <h3>2 Bedrooms To Let Thogoto</h3>
+                    <p>Two-bedrooms</p>
+                    <p><strong>Ksh 20,000</strong></p>
+                    <p><i class="location">Thogoto, Kiambu</i></p>
+                </div>
+            </div>
+            <div class="card" onclick="location.href='#';">
+                <img src="house3.jpg" alt="House Image">
+                <div class="info">
+                    <h3>3 Bedroom Master Ensuite</h3>
+                    <p>Three-bedrooms</p>
+                    <p><strong>Ksh 27,000</strong></p>
+                    <p><i class="location">Kenyatta Road Estate, Thika</i></p>
+                </div>
+            </div>
+            <div class="card" onclick="location.href='#';">
+                <img src="house4.jpg" alt="House Image">
+                <div class="info">
+                    <h3>Nelly Oasis</h3>
+                    <p>Two-bedrooms</p>
+                    <p><strong>Ksh 15,000</strong></p>
+                    <p><i class="location">Ruiru, Nairobi</i></p>
+                </div>
+            </div>
+        </div>
+        <!-- Pagination -->
+        <div class="pagination">
+             <a href="#" class="prev">Previous</a>
+             <a href="#" class="page-num">1</a>
+             <a href="#" class="page-num">2</a>
+             <a href="#" class="next">Next</a>
+        </div>
+    <!-- Link to external JS -->
+    <script src="search.js"></script>
+
+</body>
+<!-- Footer Section -->
+<footer>
+    <div class="footer-container">
+        <!-- Social Media Icons -->
+        <div class="social-media">
+            <h3>Follow Us</h3>
+            <a href="https://www.facebook.com" target="_blank" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.twitter.com" target="_blank" class="social-icon"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.youtube.com" target="_blank" class="social-icon"><i class="fab fa-youtube"></i></a>
+            <a href="https://www.tiktok.com" target="_blank" class="social-icon"><i class="fab fa-tiktok"></i></a>
+            <a href="https://wa.me/your-whatsapp-number" target="_blank" class="social-icon"><i class="fab fa-whatsapp"></i></a>
+        </div>
+
+        <!-- Contact Information -->
+        <div class="contact-info">
+            <h3>Contact Us</h3>
+            <p>Email: kevinnjoroge360@gmail.com.com</p>
+            <p>Phone: +254745561837</p>
+            <p>Address: Nairobi kasarani sunton</p>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="quick-links">
+            <h3>Quick Links</h3>
+            <a href="aboutus.html">About Us</a>
+            <a href="services.html">Services</a>
+            <a href="terms.html">Terms & Conditions</a>
+            <a href="privacy.html">Privacy Policy</a>
+        </div>
+
+        <!-- Newsletter Subscription -->
+        <div class="newsletter">
+            <h3>Stay Updated</h3>
+            <form action="#">
+                <input type="email" placeholder="Enter your email" required>
+                <button type="submit">Subscribe</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Copyright -->
+    <div class="footer-bottom">
+        <p>&copy; 2024 RentFinder. All rights reserved.</p>
+    </div>
+</footer>
+</html>

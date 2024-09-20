@@ -1,0 +1,447 @@
+/* Back to Top Button */
+#backToTopBtn {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Position at the bottom */
+  right: 20px; /* Position on the right */
+  z-index: 99; /* Ensure it appears on top of other elements */
+  border: none; /* Remove borders */
+  outline: none;
+  background-color: #3a014d; /* Your theme color */
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 10px;
+  font-size: 18px;
+}
+
+#backToTopBtn:hover {
+  background-color: #cc33ff; /* Lighter theme color on hover */
+}
+
+
+/* Style for the WhatsApp icon outside the menu */
+.whatsapp-icon {
+  position: fixed;
+  top: 16px;      
+  right: 50px;    
+  font-size: 30px;
+  color: #25d366;
+  z-index: 2;
+}
+
+.whatsapp-icon:hover {
+  color: #1da851;  /* Darker green when hovered */
+}
+/* The menu icon */
+.menu-icon {
+    font-size: 30px;
+    cursor: pointer;
+    position: fixed;
+    right: 10px;
+    top: 10px;
+    z-index: 2;
+  }
+  
+  /* Side navigation menu */
+  .sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #6a1d8df6;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+  
+  /* Side menu links */
+  .sidenav a {
+    padding: 8px 16px;
+    text-decoration: none;
+    font-size: 18px;
+    color: #ffffff;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  /* Close button at the top of the side menu */
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 15px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  /* Links hover effect */
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+  
+  /* Existing styles */
+  * {
+      margin: 0;
+      padding: 0;
+      font-family: sans-serif;
+      box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    background-image: url('backgrounds.jpg');
+    background-repeat: no-repeat; 
+    background-size: 100% auto; 
+    background-position: center 8vh; /* Centered horizontally, 20vh from the top */
+    height: 100vh; /* Full height of the viewport */
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(25deg, #f3f3f3 50%, #e7e7e7 50%);
+  }
+  
+  .background-wrapper {
+    position: absolute;
+    top: 0vh; /* Start 20vh (viewport height units) from the top */
+    height: 58vh; /* Covers 3/4 of the viewport height */
+    width: 100%;
+    background-image: url('background.jpg'); /* Image path */
+    background-repeat: no-repeat;
+    background-size: 100% 100%; /* Stretch it to fit the container */
+  }
+
+
+  h1 {
+      position: absolute;
+      top: 8%;
+      font-size: 60px;
+      color: rgb(0, 0, 0);
+  }
+           /* search Box */
+  .box {
+      width: 350px;
+      height: 40px;
+      background-color: white;
+      border-radius: 30px;
+      display: flex;
+      align-items: center;
+      padding: 20px;
+      margin-bottom: 200px;
+      position: absolute;
+  }
+  
+  .box > i {
+      font-size: 20px;
+      color: #777;
+  }
+  
+  .box > input {
+      flex: 1;
+      height: 40px;
+      border: none;
+      outline: none;
+      font-size: 18px;
+      padding-left: 10px;
+  }
+  
+  .box > .fa-solid {
+      font-size: 20px;
+      color: #777;
+      cursor: pointer;
+  }
+  
+  /* Dropdown content styling */
+  .dropdown-content {
+      display: none;
+      position: absolute;
+      top: 60px;
+      align-items: center;
+      background-color: #f9f9f9;
+      min-width: 200px;
+      box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+      border-radius: 5px;
+      z-index: 1;
+  }
+  
+  .dropdown-content h2 {
+      font-size: 150%;
+      color: #333;
+      text-align: center;
+      padding: 10px;
+  }
+  
+  .glass {
+      background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      border-radius: 20px;
+      border: 1px solid rgba(255, 255, 255, 0.18);
+      box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+      padding: 20px;
+      width: 300px;
+  }
+  
+  form {
+      display: flex;
+      flex-direction: column;
+  }
+  
+  label {
+      font-size: 1rem;
+      margin-bottom: 5px;
+      color: #333;
+  }
+  
+  select, button {
+      margin-bottom: 15px;
+      padding: 10px;
+      border-radius: 10px;
+      border: 1px solid #ddd;
+      outline: none;
+      font-size: 1rem;
+  }
+  
+  button {
+      background-color: #9b18c7;
+      color: white;
+      cursor: pointer;
+  }
+  
+  button:hover {
+      background-color: #bc7ec9dc;
+  }
+  
+  .dropdown-content ul li {
+      padding: 8px 12px;
+      cursor: pointer;
+      color: #333;
+  }
+  
+  .dropdown-content ul li:hover {
+      background-color: #f1f1f1;
+  }
+  
+  /* Show dropdown when .show class is added */
+  .show {
+      display: block;
+  }
+
+  h2 {
+    position: absolute;
+    text-align: center;
+    top: 58%;
+    font-size: 20px;
+    color: rgba(8, 6, 6, 0.603);
+    margin-bottom: 20px;
+  }
+              /* cards............ */
+  .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: 360px;  /*for desktop*/
+    padding-top: 210vh; /* Start cards at 60% from top of mobile page */
+  }
+
+  .card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+                
+  .card:hover {
+    transform: translateY(-10px);
+  }
+                
+  .card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+ }
+                
+  .info {
+    padding: 15px;
+}
+                
+  .info h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #333;
+}
+                
+  .info p {
+    color: #666;
+    margin-bottom: 5px;
+}
+                
+  .info strong {
+    font-size: 20px;
+    color: #2c7a7b;
+}
+                
+  .info .location {
+    font-size: 14px;
+    color: #777;
+}
+                
+        /* Desktop specific styling */
+    @media (min-width: 768px) {
+ .container {
+    padding-top: 1000px; /* Start cards higher on desktop */
+}
+    }
+/* Pagination */
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top:20px;
+  padding: 10px 0;
+}
+
+.pagination a {
+  color: #8600b3;
+  text-decoration: none;
+  padding: 8px 16px;
+  margin: 0 4px;
+  border: 1px solid #d8d2da;
+  border-radius: 4px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.pagination a:hover {
+  background-color: #8600b3;
+  color: white;
+}
+
+.pagination a.active {
+  background-color: #8600b3;
+  color: white;
+  pointer-events: none; /* Disable click on active page */
+}
+
+.pagination a.prev, .pagination a.next {
+  font-weight: bold;
+}
+
+/* Footer General Styling */
+footer {
+  width: 100%;               /* Ensure footer takes full width */
+  background-color: #8600b3;  /* Your footer background */
+  color: white;
+  text-align: center;      
+  padding: 20px 0;            
+  position: relative;        
+  font-family: 'Arial', sans-serif;          
+}
+
+.footer-container {
+  display: flex;             
+  justify-content: space-around;
+  flex-wrap: wrap;           
+}
+
+/* Ensure the footer stays at the bottom if content is too short */
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;        
+}
+
+main {
+  flex: 1;                  
+}
+
+.social-media h3 {
+  color: #cc33ff;
+}
+
+.social-icon {
+  font-size: 24px;
+  color: white;
+  margin: 10px;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.social-icon:hover {
+  color: #cc33ff;
+}
+
+.contact-info h3, .quick-links h3, .newsletter h3 {
+  color: #cc33ff;
+}
+
+.quick-links a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  margin: 5px 0;
+}
+
+.quick-links a:hover {
+  color: #cc33ff;
+}
+
+/* Newsletter Subscription */
+.newsletter form {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.newsletter input[type="email"] {
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  width: 80%;
+  max-width: 300px;
+  margin-bottom: 10px;
+}
+
+.newsletter button {
+  background-color: #cc33ff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.newsletter button:hover {
+  background-color: white;
+  color: #8600b3;
+}
+
+/* Footer Bottom */
+.footer-bottom {
+  background-color: #6b0091;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.footer-bottom p {
+  margin: 0;
+  color: white;
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .footer-container {
+      flex-direction: column;
+      align-items: center;
+  }
+}
