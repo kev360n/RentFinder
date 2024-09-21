@@ -158,30 +158,33 @@
   .dropdown-content {
       display: none;
       position: absolute;
-      top: 60px;
-      align-items: center;
+      top: 50px;
+      left: 0;
       background-color: #f9f9f9;
       min-width: 200px;
+      max-height: 350px;
+      overflow: hidden;
       box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
-      border-radius: 5px;
+      border-radius: 8px;
       z-index: 1;
   }
   
   .dropdown-content h2 {
-      font-size: 150%;
+      font-size: 110%;
       color: #333;
       text-align: center;
       padding: 10px;
+      margin: 0;
   }
   
   .glass {
       background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
       backdrop-filter: blur(10px);
       -webkit-backdrop-filter: blur(10px);
-      border-radius: 20px;
+      border-radius: 5px;
       border: 1px solid rgba(255, 255, 255, 0.18);
       box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
-      padding: 20px;
+      padding: 10px;
       width: 300px;
   }
   
@@ -293,7 +296,33 @@
     font-size: 14px;
     color: #777;
 }
-                
+
+  /* Mobile Specific Adjustments */
+@media (max-width: 768px) {
+  .container {
+      grid-template-columns: repeat(2, 1fr); /* Two columns for mobile devices */
+      gap: 10px;
+      padding-top: 418vh; 
+      margin-top: 0; /* Ensure the margin-top doesn’t push the cards too far down */
+  }
+
+  .card img {
+      height: 150px;
+  }
+}
+
+/* For Very Small Screens or Portrait Mobile (Optional) */
+@media (max-width: 480px) {
+  .container {
+      grid-template-columns: 1fr; /* Single column for very small screens */
+      gap: 10px;
+      margin-top: 0; /* Ensure cards start at the top */
+  }
+
+  .card img {
+      height: 150px; /* Further reduce image height for small screens */
+  }
+}              
         /* Desktop specific styling */
     @media (min-width: 768px) {
  .container {
