@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hire Professional Assistance</title>
+    <link rel="stylesheet" href="hire.css">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>Professional Assistance at Your Fingertips</h1>
+        <p>We offer reliable and affordable services for your home and business.</p>
+    </header>
+
+    <!-- Services Section -->
+    <section class="services">
+        <div class="service-card" onclick="toggleDetails('electric')">
+            <h2>Electric Repairs</h2>
+            <p>Fix faulty wiring, power surges, and more.</p>
+            <button class="details-btn">More Details</button>
+            <div class="service-details" id="electric">
+                <p>Our electricians are certified and available 24/7. Whether it's fixing faulty wiring or solving power surges, we've got you covered!</p>
+            </div>
+        </div>
+
+        <div class="service-card" onclick="toggleDetails('plumbing')">
+            <h2>Plumbing Services</h2>
+            <p>Leaks, clogs, installations, and more.</p>
+            <button class="details-btn">More Details</button>
+            <div class="service-details" id="plumbing">
+                <p>We specialize in plumbing services, including leak repair, pipe installation, unclogging drains, and much more!</p>
+            </div>
+        </div>
+
+        <div class="service-card" onclick="toggleDetails('cleaning')">
+            <h2>Cleaning Services</h2>
+            <p>Deep cleaning for homes and offices.</p>
+            <button class="details-btn">More Details</button>
+            <div class="service-details" id="cleaning">
+                <p>Our professional cleaners will ensure your space is spotless with deep cleaning, window washing, and more.</p>
+            </div>
+        </div>
+
+        <div class="service-card" onclick="toggleDetails('carpentry')">
+            <h2>Carpentry</h2>
+            <p>Custom furniture, repairs, and more.</p>
+            <button class="details-btn">More Details</button>
+            <div class="service-details" id="carpentry">
+                <p>We offer custom carpentry services, including furniture repair, cabinetry, and woodwork installation.</p>
+            </div>
+        </div>
+
+        <div class="service-card" onclick="toggleDetails('tv-mounting')">
+            <h2>TV Mounting</h2>
+            <p>Safe and professional TV installations.</p>
+            <button class="details-btn">More Details</button>
+            <div class="service-details" id="tv-mounting">
+                <p>Our team specializes in mounting TVs securely on any wall. We'll ensure it's level and connected properly.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Professional Assistance Services. All rights reserved.</p>
+    </footer>
+
+    <!-- Script for Toggling Details -->
+    <script>
+        function toggleDetails(serviceId) {
+            const details = document.getElementById(serviceId);
+            if (details.style.display === "block") {
+                details.style.display = "none";
+            } else {
+                details.style.display = "block";
+            }
+        }
+    </script>
+
+</body>
+</html>
